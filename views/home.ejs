@@ -1,0 +1,15 @@
+<div>
+    <h1>Blog Posts</h1>
+    <% posts.forEach(post=> { %>
+        <div>
+            <img src="/uploads/<%= post.image %>" alt="Post Image">
+            <h2>
+                <%= post.title %>
+            </h2>
+            <p>
+                <%= post.content %>
+            </p>
+            <button>Like (<%= post.likes.length %>)</button>
+        </div>
+        <% }) %>
+</div>
